@@ -3,6 +3,9 @@
 Repositorio del proyecto de **Recuperación de Información Aumentada (RAG)** para la Facultad de Ingeniería Eléctrica y Electrónica de la Universidad Nacional de Ingeniería (UNI).
 
 ---
+## Objetivo principal:
+Facilitar los procesos largos y la difusión de reglamentos mediante un chatbot interactivo que responda de forma inmediata y precisa a las dudas más comunes de los estudiantes de la FIEE.
+
 
 ## 🎯 Objetivos del Proyecto
 
