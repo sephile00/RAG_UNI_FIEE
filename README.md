@@ -40,6 +40,11 @@ Esto permite ofrecer respuestas **confiables, actualizadas y contextualizadas**,
 | Fase de pruebas con estudiantes | 🔜 Futura |
 
 ---
+## Trabajos 
+https://www.edutec.es/revista/index.php/edutec-e/article/view/2971/1185
+https://repositorio.uvm.edu.ve/server/api/core/bitstreams/2b68d8ed-5297-4a9c-9a20-da15347cfebe/content
 
 ## 🗂️ Estructura esperada del proyecto
+
+
 
