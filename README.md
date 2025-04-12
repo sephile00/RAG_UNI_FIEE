@@ -45,6 +45,71 @@ https://www.edutec.es/revista/index.php/edutec-e/article/view/2971/1185
 https://repositorio.uvm.edu.ve/server/api/core/bitstreams/2b68d8ed-5297-4a9c-9a20-da15347cfebe/content
 
 ## 🗂️ Estructura esperada del proyecto
+RAG_UNI_FIEE/
+│
+├── data/                        # Datos de entrada
+│   ├── raw/                    # PDFs originales
+│   └── processed/              # Chunks limpios y listos
+│
+├── notebooks/                  # Pruebas y exploración en Jupyter
+│   └── 01_exploracion.ipynb
+│
+├── src/                        # Código fuente principal
+│   ├── ingestion/              # Carga y extracción de PDFs
+│   │   └── load_documents.py
+│   ├── processing/             # Limpieza, chunking, normalización
+│   │   └── chunking.py
+│   ├── embeddings/             # Generación de embeddings
+│   │   └── generate_embeddings.py
+│   ├── retriever/              # Búsqueda semántica (FAISS)
+│   │   └── vector_search.py
+│   ├── rag/                    # RAG: contexto + pregunta + respuesta
+│   │   └── query_with_context.py
+│   └── app/                    # Interfaz del usuario (Streamlit/Gradio)
+│       └── interface.py
+│
+├── tests/                      # Pruebas unitarias
+│   └── test_chunking.py
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── LICENSE
+└── retrospectiva.md            # Lecciones aprendidas por semana
+
+## 🔁 Metodología Ágil (SCRUM adaptado)
+
+Se usa SCRUM con sprints semanales y retrospectivas, adaptado para un equipo pequeño de desarrolladores. Cada semana tiene un objetivo técnico claro y entregable.
+
+---
+
+## 📅 Plan Semanal
+
+### Semana 1:
+- Estructura, carga inicial, chunking
+
+### Semana 2:
+- Embeddings y recuperación semántica
+
+### Semana 3:
+- RAG completo (pregunta + contexto + respuesta)
+
+### Semana 4:
+- Interfaz y demo funcional
+
+---
+
+## 🚀 Cómo ejecutar
+
+```bash
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar carga
+python src/ingestion/load_documents.py
+
+# Ejecutar interfaz
+streamlit run src/app/interface.py
 
 
 
