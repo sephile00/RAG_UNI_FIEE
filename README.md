@@ -45,71 +45,85 @@ https://www.edutec.es/revista/index.php/edutec-e/article/view/2971/1185
 https://repositorio.uvm.edu.ve/server/api/core/bitstreams/2b68d8ed-5297-4a9c-9a20-da15347cfebe/content
 
 ## 🗂️ Estructura esperada del proyecto
-RAG_UNI_FIEE/
-│
-├── data/                        # Datos de entrada
-│   ├── raw/                    # PDFs originales
-│   └── processed/              # Chunks limpios y listos
-│
-├── notebooks/                  # Pruebas y exploración en Jupyter
-│   └── 01_exploracion.ipynb
-│
-├── src/                        # Código fuente principal
-│   ├── ingestion/              # Carga y extracción de PDFs
-│   │   └── load_documents.py
-│   ├── processing/             # Limpieza, chunking, normalización
-│   │   └── chunking.py
-│   ├── embeddings/             # Generación de embeddings
-│   │   └── generate_embeddings.py
-│   ├── retriever/              # Búsqueda semántica (FAISS)
-│   │   └── vector_search.py
-│   ├── rag/                    # RAG: contexto + pregunta + respuesta
-│   │   └── query_with_context.py
-│   └── app/                    # Interfaz del usuario (Streamlit/Gradio)
-│       └── interface.py
-│
-├── tests/                      # Pruebas unitarias
-│   └── test_chunking.py
-│
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── retrospectiva.md            # Lecciones aprendidas por semana
+
 
 ## 🔁 Metodología Ágil (SCRUM adaptado)
 
 Se usa SCRUM con sprints semanales y retrospectivas, adaptado para un equipo pequeño de desarrolladores. Cada semana tiene un objetivo técnico claro y entregable.
 
----
+### 🎯 ¿Por qué SCRUM?
 
-## 📅 Plan Semanal
-
-### Semana 1:
-- Estructura, carga inicial, chunking
-
-### Semana 2:
-- Embeddings y recuperación semántica
-
-### Semana 3:
-- RAG completo (pregunta + contexto + respuesta)
-
-### Semana 4:
-- Interfaz y demo funcional
+SCRUM es ideal para este tipo de proyectos porque:
+- Se puede dividir el trabajo en etapas claras (sprints).
+- Permite avanzar con entregables pequeños y funcionales.
+- Fomenta la reflexión y mejora continua (retrospectivas).
+- Es adaptable a equipos de uno o más integrantes.
 
 ---
 
-## 🚀 Cómo ejecutar
+### 🧠 Roles definidos en el proyecto
 
-```bash
-# Instalar dependencias
-pip install -r requirements.txt
+| Rol              | Persona responsable                                      |
+|------------------|----------------------------------------------------------|
+| Product Owner    | César Silva y equipo – Definen funcionalidades y metas   |
+| Scrum Master     | César Silva – Organiza los sprints y gestiona el flujo   |
+| Developers       | Todos los miembros del equipo – Implementan el sistema   |
 
-# Ejecutar carga
-python src/ingestion/load_documents.py
+---
 
-# Ejecutar interfaz
-streamlit run src/app/interface.py
+### 🕓 Duración de los sprints
+
+Cada sprint dura **una semana**, y al finalizar se realiza una revisión y una retrospectiva breve para analizar:
+
+- Qué se logró
+- Qué bloqueos hubo
+- Qué se puede mejorar para el siguiente sprint
+
+---
+
+### 📋 Artefactos del SCRUM adaptado
+
+| Artefacto         | Descripción                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| Backlog del producto | Lista priorizada de funcionalidades y tareas técnicas                    |
+| Sprint backlog    | Subconjunto del backlog que se abordará en la semana                        |
+| Retrospectiva     | Documento semanal (`retrospectiva.md`) con reflexiones y aprendizajes       |
+| Commit y Push     | Cada sprint culmina con un commit en GitHub con lo logrado                  |
+
+---
+
+### 📅 Plan de trabajo semanal (sprints)
+
+#### 🔹 Sprint 1 – Preparación inicial
+- Crear estructura del proyecto y repositorio
+- Subir a GitHub
+- Cargar documentos oficiales (reglamentos, syllabus)
+- Implementar carga y segmentación de textos
+
+#### 🔹 Sprint 2 – Embeddings y búsqueda semántica
+- Generar embeddings de los documentos
+- Crear índice vectorial (FAISS)
+- Implementar motor de búsqueda de contexto relevante
+
+#### 🔹 Sprint 3 – RAG: Generación de respuestas con contexto
+- Integrar embeddings con preguntas de usuario
+- Conectar con un modelo LLM (ej. GPT o local)
+- Probar flujo completo: pregunta + contexto → respuesta
+
+#### 🔹 Sprint 4 – Interfaz y presentación
+- Desarrollar interfaz con Streamlit o Gradio
+- Probar localmente
+- Preparar demo o presentación para exposición
+
+---
+
+### ✅ Beneficios esperados
+
+- Mayor organización del trabajo semanal
+- Resultados visibles al final de cada semana
+- Mejora continua con base en retros
+- Código siempre subido y versionado en GitHub
+
 
 
 
