@@ -26,5 +26,5 @@ Un sistema de **Recuperación de Información Aumentada (RAG)** combina dos tecn
 
 Esto permite ofrecer respuestas **confiables, actualizadas y contextualizadas**, evitando "alucinaciones" del modelo.
 
-##Arquitectura 
+## Arquitectura de RAG FIEE UNI
 ![Diagrama de arquitectura](./ArquitecturaRAGFIEEUNI.drawio.png "Arquitectura del sistema IoT")
