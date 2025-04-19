@@ -97,23 +97,53 @@ Cada sprint dura **una semana**, y al finalizar se realiza una revisión y una r
 #### 🔹 Sprint 1 – Preparación inicial
 - Crear estructura del proyecto y repositorio
 - Subir a GitHub
-- Cargar documentos oficiales (reglamentos, syllabus)
+- Investigar documentos oficiales (reglamentos, syllabus)
+- Definir estructura general del proyecto RAG
+
+#### 🔹 Sprint 2 – Arquitectura del RAG
+- Diseño de la arquitectura general del sistema RAG
+- Definición de componentes (vectorización, almacenamiento, búsqueda)
+- Selección de tecnologías (LangChain, FAISS, ChromaDB)
+- Implementar estructura base del código
+
+#### 🔹 Sprint 3 – Extracción de datos
+- Recopilación de fuentes de datos oficiales FIEE
+  - Reglamentos académicos de pregrado
+  - Mallas curriculares de especialidades
+  - Syllabus de cursos disponibles
+  - Documentos de la Oficina de Calidad Académica
+- Desarrollo de scripts para extracción de datos de PDF y documentos web
+- Limpieza y estructuración de los datos extraídos
+
+#### 🔹 Sprint 4 – Procesamiento de documentos
 - Implementar carga y segmentación de textos
+- Procesar documentos extraídos (chunking)
+- Crear pipeline de preprocesamiento
+- Desarrollo de filtros para información relevante
 
-#### 🔹 Sprint 2 – Embeddings y búsqueda semántica
-- Generar embeddings de los documentos
-- Crear índice vectorial (FAISS)
+#### 🔹 Sprint 5 – Embeddings y búsqueda semántica
+- Generar embeddings de los documentos segmentados
+- Crear índice vectorial (FAISS o ChromaDB)
 - Implementar motor de búsqueda de contexto relevante
+- Pruebas iniciales de recuperación semántica
 
-#### 🔹 Sprint 3 – RAG: Generación de respuestas con contexto
+#### 🔹 Sprint 6 – RAG: Generación de respuestas con contexto
 - Integrar embeddings con preguntas de usuario
 - Conectar con un modelo LLM (ej. GPT o local)
+- Implementar prompt engineering para respuestas precisas
 - Probar flujo completo: pregunta + contexto → respuesta
 
-#### 🔹 Sprint 4 – Interfaz y presentación
+#### 🔹 Sprint 7 – Interfaz y experiencia de usuario
 - Desarrollar interfaz con Streamlit o Gradio
-- Probar localmente
-- Preparar demo o presentación para exposición
+- Implementar historial de conversaciones
+- Añadir funcionalidades de citas y referencias a documentos
+- Probar localmente con usuarios piloto
+
+#### 🔹 Sprint 8 – Evaluación, optimización y presentación
+- Realizar pruebas con estudiantes y docentes
+- Optimizar rendimiento y precisión del sistema
+- Documentar el proyecto y crear guía de uso
+- Preparar demo o presentación para exposición final
 
 ---
 
@@ -123,7 +153,3 @@ Cada sprint dura **una semana**, y al finalizar se realiza una revisión y una r
 - Resultados visibles al final de cada semana
 - Mejora continua con base en retros
 - Código siempre subido y versionado en GitHub
-
-
-
-
