@@ -92,64 +92,69 @@ Cada sprint dura **una semana**, y al finalizar se realiza una revisión y una r
 
 ---
 
-### 📅 Plan de trabajo semanal (sprints)
+<p align="center">
+  <img src="https://img.shields.io/github/actions/workflow/status/<ORG>/<REPO>/ci.yml?label=CI" alt="CI Status"/>
+  <img src="https://img.shields.io/badge/coverage-80%25-brightgreen" alt="Coverage"/>
+  <a href="https://github.com/<ORG>/<REPO>/projects/1"><img src="https://img.shields.io/badge/kanban-board-blueviolet" alt="Project Board"/></a>
+</p>
 
-#### 🔹 Sprint 1 – Preparación inicial
-- Crear estructura del proyecto y repositorio
-- Subir a GitHub
-- Investigar documentos oficiales (reglamentos, syllabus)
-- Definir estructura general del proyecto RAG
+## 📜 Visión
+Asistente RAG para reglamentos, normas y syllabus de la Facultad.  
+Desarrollado con Programación Extrema (XP) en **8 sprints** semanales.
 
-#### 🔹 Sprint 2 – Arquitectura del RAG
-- Diseño de la arquitectura general del sistema RAG
-- Definición de componentes (vectorización, almacenamiento, búsqueda)
-- Selección de tecnologías (LangChain, FAISS, ChromaDB)
-- Implementar estructura base del código
+## 👥 Equipo
+| Inicial | Nombre | Zona pairing |
+|---------|--------|--------------|
+| **CS**  | César  | Lima-PE |
+| **DG**  | Diego  | Lima-PE |
+| **JV**  | Javier | Lima-PE |
 
-#### 🔹 Sprint 3 – Extracción de datos
-- Recopilación de fuentes de datos oficiales FIEE
-  - Reglamentos académicos de pregrado
-  - Mallas curriculares de especialidades
-  - Syllabus de cursos disponibles
-  - Documentos de la Oficina de Calidad Académica
-- Desarrollo de scripts para extracción de datos de PDF y documentos web
-- Limpieza y estructuración de los datos extraídos
-
-#### 🔹 Sprint 4 – Procesamiento de documentos
-- Implementar carga y segmentación de textos
-- Procesar documentos extraídos (chunking)
-- Crear pipeline de preprocesamiento
-- Desarrollo de filtros para información relevante
-
-#### 🔹 Sprint 5 – Embeddings y búsqueda semántica
-- Generar embeddings de los documentos segmentados
-- Crear índice vectorial (FAISS o ChromaDB)
-- Implementar motor de búsqueda de contexto relevante
-- Pruebas iniciales de recuperación semántica
-
-#### 🔹 Sprint 6 – RAG: Generación de respuestas con contexto
-- Integrar embeddings con preguntas de usuario
-- Conectar con un modelo LLM (ej. GPT o local)
-- Implementar prompt engineering para respuestas precisas
-- Probar flujo completo: pregunta + contexto → respuesta
-
-#### 🔹 Sprint 7 – Interfaz y experiencia de usuario
-- Desarrollar interfaz con Streamlit o Gradio
-- Implementar historial de conversaciones
-- Añadir funcionalidades de citas y referencias a documentos
-- Probar localmente con usuarios piloto
-
-#### 🔹 Sprint 8 – Evaluación, optimización y presentación
-- Realizar pruebas con estudiantes y docentes
-- Optimizar rendimiento y precisión del sistema
-- Documentar el proyecto y crear guía de uso
-- Preparar demo o presentación para exposición final
+> _Pair-programming rotativo_: cada día se cambia la dupla; la tercera persona revisa el PR.
 
 ---
 
-### ✅ Beneficios esperados
+## 🗓️ Cronograma de sprints
 
-- Mayor organización del trabajo semanal
-- Resultados visibles al final de cada semana
-- Mejora continua con base en retros
-- Código siempre subido y versionado en GitHub
+| Sprint | Semana (2025) | Objetivo técnico | Pareja inicial | Revisor |
+|-------:|---------------|------------------|----------------|---------|
+| **1** | 28 abr → 4 may | **Tokenizer MVP + CI** | CS + DG | JV |
+| **2** | 5 may → 11 may | Ingesta & limpieza PDFs/HTML | DG + JV | CS |
+| **3** | 12 may → 18 may | Indexado vectorial (FAISS) | JV + CS | DG |
+| **4** | 19 may → 25 may | Recuperador y reranking | CS + DG | JV |
+| **5** | 26 may → 1 jun | LLM wrapper & prompts | DG + JV | CS |
+| **6** | 2 jun → 8 jun | API FastAPI + Docker | JV + CS | DG |
+| **7** | 9 jun → 15 jun | Front-end React/Tailwind | CS + DG | JV |
+| **8** | 16 jun → 22 jun | Deploy & observabilidad | DG + JV | CS |
+
+---
+
+## 🎯 Historias de usuario por sprint
+
+<details>
+<summary><strong>Sprint 1 — Tokenizer MVP</strong></summary>
+
+| HU | Título | Puntos | Estado |
+|----|--------|--------|--------|
+| **HU-1** | Tokenizar texto crudo | 3 | ☐ |
+| **HU-2** | Configurar pruebas automatizadas | 2 | ☐ |
+| **HU-3** | CLI round-trip encode→decode | 1 | ☐ |
+
+</details>
+
+<details>
+<summary><strong>Sprint 2 — Ingesta & limpieza</strong></summary>
+
+| HU | Título | Puntos | Estado |
+|----|--------|--------|--------|
+| **HU-4** | ETL de PDFs/HTML a texto | 3 | ☐ |
+| **HU-5** | Normalizar caracteres y acentos | 2 | ☐ |
+| **HU-6** | QA de tamaño/documento | 1 | ☐ |
+
+</details>
+
+<!-- Repetir blocks de <details> para sprints 3-8 … -->
+
+---
+
+## 🧑‍💻 Estructura del repositorio
+
