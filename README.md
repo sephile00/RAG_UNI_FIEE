@@ -101,3 +101,15 @@ Construir un **chatbot RAG** que responda de forma inmediata, confiable y con re
 
 ## 🛠️ Estructura del repositorio
 
+
+```bash
+$ python -m src.tokenizer "¡Hola, UNI!"
+IDs : [0, 1, 2, 3]
+Back: ¡ hola , uni !
+
+Un badge provisional de cobertura (actualízalo más adelante si usas Codecov):
+
+```markdown
+![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+
+

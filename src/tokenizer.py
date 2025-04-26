@@ -25,3 +25,13 @@ class SimpleTokenizer:
 
     def decode(self, ids: List[int]) -> str:
         return " ".join(self._inv[i] for i in ids)
+
+
+if __name__ == "__main__":        # CLI rápida
+    import sys, json
+
+    text = " ".join(sys.argv[1:]) or "¡Hola, FIEE!"
+    tok = SimpleTokenizer()
+    ids = tok.encode(text)
+    print("IDs :", ids)
+    print("Back:", tok.decode(ids))
