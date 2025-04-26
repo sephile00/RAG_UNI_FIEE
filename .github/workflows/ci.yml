@@ -15,3 +15,11 @@ jobs:
       - run: ruff .                      # 4) Linter Ruff
       - run: black --check .             # 5) Formateador Black en modo verificación
       - run: pytest --cov=src            # 6) Ejecuta tests + cobertura
+      - run: pip install pytest pytest-cov ruff black
+
+      # Ruff con subcomando 'check'
+      - run: ruff check src tests
+      
+      # Black
+      - run: black --check src tests
+      
