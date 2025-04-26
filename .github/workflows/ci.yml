@@ -1,0 +1,17 @@
+name: CI                                 # Nombre visible en pestaña Actions
+
+on: [push, pull_request]                 # Ejecutar en cada push y PR
+
+jobs:
+  test:                                  # Job llamado “test”
+    runs-on: ubuntu-latest               # Máquina virtual Ubuntu
+
+    steps:                               # Pasos secuenciales
+      - uses: actions/checkout@v4        # 1) Clona tu repo en el runner
+      - uses: actions/setup-python@v5    # 2) Instala Python 3.12
+        with: { python-version: "3.12" }
+
+      - run: pip install -e .[dev]       # 3) Instala dependencias (requiere [dev] en pyproject)
+      - run: ruff .                      # 4) Linter Ruff
+      - run: black --check .             # 5) Formateador Black en modo verificación
+      - run: pytest --cov=src            # 6) Ejecuta tests + cobertura
