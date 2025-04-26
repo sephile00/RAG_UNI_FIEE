@@ -1,160 +1,103 @@
 # RAG-UNI-FIEE
 
-Repositorio del proyecto de **Recuperación de Información Aumentada (RAG)** para la Facultad de Ingeniería Eléctrica y Electrónica de la Universidad Nacional de Ingeniería (UNI).
+Repositorio oficial del proyecto **Recuperación de Información Aumentada (RAG)**  
+para la Facultad de Ingeniería Eléctrica y Electrónica – **Universidad Nacional de Ingeniería (UNI)**.
+
+<p align="center">
+  <img src="https://img.shields.io/github/actions/workflow/status/&lt;ORG&gt;/&lt;REPO&gt;/ci.yml?label=CI" alt="CI Status"/>
+  <img src="https://img.shields.io/endpoint?url=https://codecov.io/api/gh/&lt;ORG&gt;/&lt;REPO&gt;/coverage_badge.json" alt="Coverage"/>
+  <a href="https://github.com/&lt;ORG&gt;/&lt;REPO&gt;/projects/1">
+    <img src="https://img.shields.io/badge/kanban-board-blueviolet" alt="Project Board"/>
+  </a>
+</p>
 
 ---
-## Objetivo principal:
-Facilitar los procesos largos y la difusión de reglamentos mediante un chatbot interactivo que responda de forma inmediata y precisa a las dudas más comunes de los estudiantes de la FIEE.
 
+## 🎯 Objetivo general
+Construir un **chatbot RAG** que responda de forma inmediata, confiable y con referencias a:
 
-## 🎯 Objetivos del Proyecto
-
-1. Brindar respuestas claras sobre reglamentos y normas académicas de la FIEE (créditos, repitencia, requisitos de egreso, etc.).
-2. Facilitar el acceso a información detallada sobre los cursos (syllabus, bibliografía, contenidos).
-3. Automatizar la atención de consultas frecuentes mediante IA.
-4. Utilizar un modelo de lenguaje (como GPT) potenciado por recuperación de documentos oficiales (RAG).
-5. Construir una herramienta útil, extensible y validada para estudiantes y docentes de la FIEE.
+* Reglamentos académicos (créditos, repitencia, egreso, etc.).
+* Sílabos, bibliografía y contenidos de los cursos.
+* Procedimientos administrativos frecuentes.
 
 ---
 
 ## 🤖 ¿Qué es un sistema RAG?
-
-Un sistema de **Recuperación de Información Aumentada (RAG)** combina dos tecnologías:
-
-- **Recuperación** de documentos relevantes (PDFs, syllabus, reglamentos).
-- **Generación** de respuestas usando un modelo de lenguaje (como GPT), con base en esos documentos.
-
-Esto permite ofrecer respuestas **confiables, actualizadas y contextualizadas**, evitando "alucinaciones" del modelo.
+*Recuperación* + *Generación*:  
+1. **Recuperador** (vector store) trae los documentos más relevantes  
+2. **Generador** (LLM) redacta la respuesta citando las fuentes  
+➡️ Respuestas actualizadas, con grounding documental y mínimas alucinaciones.
 
 ---
 
-## 📌 Estado Actual del Proyecto
+## 🧑‍🤝‍🧑 Equipo XP
 
-| Etapa | Estado |
-|-------|--------|
-| Recolección de reglamentos oficiales | ✅ En progreso |
-| Estructura base del README.md | ✅ Listo |
-| Definición de herramientas (LangChain, FAISS, etc.) | 🔄 En evaluación |
-| Integración de syllabus y bibliografía | 🔜 Pendiente |
-| Interfaz de usuario (web/chatbot) | 🔜 Pendiente |
-| Fase de pruebas con estudiantes | 🔜 Futura |
+| Inicial | Nombre  | Ubicación | Rol XP† |
+|---------|---------|-----------|---------|
+| **CS**  | César   | Lima-PE   | Dev / PO |
+| **DG**  | Diego   | Lima-PE   | Dev |
+| **JV**  | Javier  | Lima-PE   | Dev |
 
----
-## Trabajos 
-https://www.edutec.es/revista/index.php/edutec-e/article/view/2971/1185
-https://repositorio.uvm.edu.ve/server/api/core/bitstreams/2b68d8ed-5297-4a9c-9a20-da15347cfebe/content
+† _Programación Extrema_ → todos son desarrolladores, el **Product Owner** rota cada sprint para fomentar _collective ownership_.
 
-## 🗂️ Estructura esperada del proyecto
-
-
-## 🔁 Metodología Ágil (SCRUM adaptado)
-
-Se usa SCRUM con sprints semanales y retrospectivas, adaptado para un equipo pequeño de desarrolladores. Cada semana tiene un objetivo técnico claro y entregable.
-
-### 🎯 ¿Por qué SCRUM?
-
-SCRUM es ideal para este tipo de proyectos porque:
-- Se puede dividir el trabajo en etapas claras (sprints).
-- Permite avanzar con entregables pequeños y funcionales.
-- Fomenta la reflexión y mejora continua (retrospectivas).
-- Es adaptable a equipos de uno o más integrantes.
+*Pair-programming rotativo*: cada día se forma una dupla distinta; la tercera persona revisa el PR.
 
 ---
 
-### 🧠 Roles definidos en el proyecto
+## 🚦 Estado actual
 
-| Rol              | Persona responsable                                      |
-|------------------|----------------------------------------------------------|
-| Product Owner    | César Silva y equipo – Definen funcionalidades y metas   |
-| Scrum Master     | César Silva – Organiza los sprints y gestiona el flujo   |
-| Developers       | Todos los miembros del equipo – Implementan el sistema   |
-
----
-
-### 🕓 Duración de los sprints
-
-Cada sprint dura **una semana**, y al finalizar se realiza una revisión y una retrospectiva breve para analizar:
-
-- Qué se logró
-- Qué bloqueos hubo
-- Qué se puede mejorar para el siguiente sprint
+| Entregable                               | Progreso |
+|------------------------------------------|----------|
+| **Sprint 1 – Tokenizer MVP**             | ✅ Completado (19 → 26 abr 2025) |
+| Recolección de reglamentos oficiales     | 🔄 En curso |
+| Selección de componentes (LangChain, FAISS, etc.) | 🔄 Evaluación |
+| Integración de sílabos y bibliografía    | ⏳ Pendiente |
+| UI web/chatbot                           | ⏳ Pendiente |
+| Pruebas piloto con estudiantes           | ⏳ Futuro |
 
 ---
 
-### 📋 Artefactos del SCRUM adaptado
+## 🗺️ Hoja de ruta en 8 sprints (1 semana c/u)
 
-| Artefacto         | Descripción                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| Backlog del producto | Lista priorizada de funcionalidades y tareas técnicas                    |
-| Sprint backlog    | Subconjunto del backlog que se abordará en la semana                        |
-| Retrospectiva     | Documento semanal (`retrospectiva.md`) con reflexiones y aprendizajes       |
-| Commit y Push     | Cada sprint culmina con un commit en GitHub con lo logrado                  |
-
----
-
-<p align="center">
-  <img src="https://img.shields.io/github/actions/workflow/status/<ORG>/<REPO>/ci.yml?label=CI" alt="CI Status"/>
-  <img src="https://img.shields.io/badge/coverage-80%25-brightgreen" alt="Coverage"/>
-  <a href="https://github.com/<ORG>/<REPO>/projects/1"><img src="https://img.shields.io/badge/kanban-board-blueviolet" alt="Project Board"/></a>
-</p>
-
-## 📜 Visión
-Asistente RAG para reglamentos, normas y syllabus de la Facultad.  
-Desarrollado con Programación Extrema (XP) en **8 sprints** semanales.
-
-## 👥 Equipo
-| Inicial | Nombre | Zona pairing |
-|---------|--------|--------------|
-| **CS**  | César  | Lima-PE |
-| **DG**  | Diego  | Lima-PE |
-| **JV**  | Javier | Lima-PE |
-
-> _Pair-programming rotativo_: cada día se cambia la dupla; la tercera persona revisa el PR.
+| Sprint | Fechas 2025 (lun-dom) | Objetivo técnico                                               | Pareja inicial | Revisor |
+|-------:|----------------------|----------------------------------------------------------------|----------------|---------|
+| **1** | 19 abr → 26 abr | **Tokenizer MVP + CI**                                | CS + DG | JV |
+| **2** | 27 abr → 03 may | Ingesta & limpieza PDFs/HTML                           | DG + JV | CS |
+| **3** | 04 may → 10 may | Indexado vectorial (FAISS/Chroma)                      | JV + CS | DG |
+| **4** | 11 may → 17 may | Recuperador semántico + reranking                      | CS + DG | JV |
+| **5** | 18 may → 24 may | LLM wrapper & prompt-engineering                       | DG + JV | CS |
+| **6** | 25 may → 31 may | API REST (FastAPI) + Docker                            | JV + CS | DG |
+| **7** | 01 jun → 07 jun | Front-end React/Tailwind + pruebas e2e                 | CS + DG | JV |
+| **8** | 08 jun → 14 jun | Observabilidad, Helm chart y despliegue                | DG + JV | CS |
 
 ---
 
-## 🗓️ Cronograma de sprints
-
-| Sprint | Semana (2025) | Objetivo técnico | Pareja inicial | Revisor |
-|-------:|---------------|------------------|----------------|---------|
-| **1** | 28 abr → 4 may | **Tokenizer MVP + CI** | CS + DG | JV |
-| **2** | 5 may → 11 may | Ingesta & limpieza PDFs/HTML | DG + JV | CS |
-| **3** | 12 may → 18 may | Indexado vectorial (FAISS) | JV + CS | DG |
-| **4** | 19 may → 25 may | Recuperador y reranking | CS + DG | JV |
-| **5** | 26 may → 1 jun | LLM wrapper & prompts | DG + JV | CS |
-| **6** | 2 jun → 8 jun | API FastAPI + Docker | JV + CS | DG |
-| **7** | 9 jun → 15 jun | Front-end React/Tailwind | CS + DG | JV |
-| **8** | 16 jun → 22 jun | Deploy & observabilidad | DG + JV | CS |
-
----
-
-## 🎯 Historias de usuario por sprint
+## 📑 Historias de usuario (HU) por sprint
 
 <details>
-<summary><strong>Sprint 1 — Tokenizer MVP</strong></summary>
+<summary><strong>Sprint 1 — Tokenizer MVP (✅ cerrado)</strong></summary>
 
-| HU | Título | Puntos | Estado |
-|----|--------|--------|--------|
-| **HU-1** | Tokenizar texto crudo | 3 | ☐ |
-| **HU-2** | Configurar pruebas automatizadas | 2 | ☐ |
-| **HU-3** | CLI round-trip encode→decode | 1 | ☐ |
+| HU | Título                                    | Pts | PR / Issue |
+|----|-------------------------------------------|-----|-----------|
+| HU-1 | Tokenizar texto crudo (UTF-8, puntuación) | 3 | # xx |
+| HU-2 | Configurar CI (Black, Ruff, pytest-cov)   | 2 | # xx |
+| HU-3 | CLI round-trip encode → decode            | 1 | # xx |
 
 </details>
 
 <details>
 <summary><strong>Sprint 2 — Ingesta & limpieza</strong></summary>
 
-| HU | Título | Puntos | Estado |
-|----|--------|--------|--------|
-| **HU-4** | ETL de PDFs/HTML a texto | 3 | ☐ |
-| **HU-5** | Normalizar caracteres y acentos | 2 | ☐ |
-| **HU-6** | QA de tamaño/documento | 1 | ☐ |
-
+| HU | Título                                     | Pts | Estado |
+|----|--------------------------------------------|-----|--------|
+| HU-4 | ETL de PDFs/HTML a texto plano            | 3 | ☐ |
+| HU-5 | Normalizar acentos y caracteres           | 2 | ☐ |
+| HU-6 | QA tamaño y duplicados                    | 1 | ☐ |
 </details>
 
-<!-- Repetir blocks de <details> para sprints 3-8 … -->
+<!-- Copiar/pegar y adaptar para HUs de sprints 3-8 -->
 
 ---
 
-## 🧑‍💻 Estructura del repositorio
+## 🛠️ Estructura del repositorio
 
