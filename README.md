@@ -28,3 +28,6 @@ Esto permite ofrecer respuestas **confiables, actualizadas y contextualizadas**,
 
 ## Arquitectura de RAG FIEE UNI
 ![Diagrama de arquitectura](./ArquitecturaRAGFIEEUNI.drawio.png "Arquitectura del sistema IoT")
+
+## Diagrama de Casos de Usos
+![Diagrama de arquitectura](./Screensho
