@@ -30,4 +30,4 @@ Esto permite ofrecer respuestas **confiables, actualizadas y contextualizadas**,
 ![Diagrama de arquitectura](./ArquitecturaRAGFIEEUNI.drawio.png "Arquitectura del sistema IoT")
 
 ## Diagrama de Casos de Usos
-![Diagrama de arquitectura](./Screensho
+![Diagrama de casos_de_usos](./Screenshot_20250426-193115.png)
