@@ -90,9 +90,9 @@ Construir un **chatbot RAG** que responda de forma inmediata, confiable y con re
 
 | HU | Título                                     | Pts | Estado |
 |----|--------------------------------------------|-----|--------|
-| HU-4 | ETL de PDFs/HTML a texto plano            | 3 | ☐ |
-| HU-5 | Normalizar acentos y caracteres           | 2 | ☐ |
-| HU-6 | QA tamaño y duplicados                    | 1 | ☐ |
+| HU-4 | ETL de PDFs/HTML a texto plano            | 3 | # xx|
+| HU-5 | Aplicar algoritmos de OCR                 | 2 | # xx |
+| HU-6 | Agregar a una Base Vectorial              | 1 | # xx |
 </details>
 
 <!-- Copiar/pegar y adaptar para HUs de sprints 3-8 -->
