@@ -36,7 +36,7 @@ Construir un **chatbot RAG** que responda de forma inmediata, confiable y con re
 |---------|---------|-----------|---------|
 | **CS**  | César   | Lima-PE   | Dev / PO |
 | **DG**  | Diego   | Lima-PE   | Dev |
-| **JV**  | Javier  | Lima-PE   | Dev |
+| **FK**  | Franklin  | Lima-PE   | Dev |
 
 † _Programación Extrema_ → todos son desarrolladores, el **Product Owner** rota cada sprint para fomentar _collective ownership_.
 
