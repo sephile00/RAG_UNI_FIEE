@@ -51,9 +51,9 @@ Construir un **chatbot RAG** que responda de forma inmediata, confiable y con re
 | **Sprint 1 – Tokenizer MVP**             | ✅ Completado (19 → 26 abr 2025) |
 | **Sprint 2 – Ingesta & limpieza**        | ✅ Completado (27 abr → 03 may 2025) |
 | **Sprint 3 – Indexado vectorial**        | ✅ Completado (04 may → 10 may 2025) |
-| **Sprint 4 – Optimización RAG**          | 🔄 En curso (11 may → 17 may 2025) |
-| Integración LLM y API REST               | ⏳ Pendiente |
-| UI web/chatbot                           | ⏳ Pendiente |
+| **Sprint 4 – Optimización RAG**          | ✅ Completado (11 may → 17 may 2025) |
+| **Integración LLM y API REST**           | ✅ Completado (18 may → 24 may 2025) |
+| **UI web/chatbot**                       | ✅ Completado (25 may → 31 may 2025) | |
 | Pruebas piloto con estudiantes           | ⏳ Futuro |
 
 ---
